@@ -1,0 +1,63 @@
+body {
+  background-image: url("bg.jpg");
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.App .flexContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: start;
+  align-items: stretch;
+  align-content: stretch;
+}
+.App .item {
+  flex: 1 1 auto;
+  margin: 0px;
+}
+.App .main .answer {
+  margin-top: -70px;
+  font-size: 10em;
+  font-weight: bolder;
+}
+.App .counterAndFacts {
+  padding: 100px 30px 30px 200px;
+}
+.App .counterAndFacts li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+.App .counterAndFacts li span {
+  display: block;
+  font-size: 4.5rem;
+}
+.App .container {
+  text-align: center;
+}
+.App .cardNumber {
+  display: inline-block;
+  margin: 5px;
+  width: 150px;
+}
+
+@media all and (max-width: 768px) {
+  .App .flexContainer {
+    flex-direction: column;
+  }
+  .App .main .header {
+    width: 150%;
+    margin-right: -95px;
+  }
+  .App .counterAndFacts {
+    padding: 10px;
+  }
+  .App .counterAndFacts .cardNumber {
+    width: 130px;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

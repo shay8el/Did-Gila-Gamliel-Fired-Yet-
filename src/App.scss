@@ -1,0 +1,75 @@
+
+body{
+  background-image: url("bg.jpg");
+  text-align: center;
+  box-sizing: border-box;
+}
+.App {
+  .flexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  .item {
+    flex: 1 1 auto;
+    margin: 0px;
+  }
+  .main{
+    .answer{
+      margin-top: -70px;
+      font-size: 10em;
+      font-weight: bolder;
+    }
+  }
+  .counterAndFacts{
+    padding: 100px 30px 30px 200px;
+
+    li {
+      display: inline-block;
+      font-size: 1.5em;
+      list-style-type: none;
+      padding: 1em;
+      text-transform: uppercase;
+    }
+
+    li span {
+      display: block;
+      font-size: 4.5rem;
+    }
+
+  }
+
+  .container {
+    text-align: center;
+  }
+  .cardNumber{
+    display: inline-block;
+    margin: 5px;
+    width: 150px;
+  }
+
+
+}
+
+@media all and (max-width: 768px) {
+  .App {
+    .flexContainer {
+      flex-direction: column;
+    }
+    .main{
+      .header{
+        width: 150%;
+        margin-right: -95px;
+      }
+    }
+    .counterAndFacts{
+      padding: 10px;
+      .cardNumber{
+        width: 130px;
+      }
+    }
+  }
+}
